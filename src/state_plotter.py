@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 import rospy
-from umnitsa_msgs.msg import ultrasonic
+from umnitsa_msgs.msg import Ultrasonic
 from pyqtgraph.Qt import QtGui, QtCore
 import numpy as np
 import pyqtgraph as pg
@@ -70,7 +70,7 @@ class StatePlotter():
 
 	def subscribe(self):
 		# rospy.init_node('State_Plotter', anonymous=False)
-		# rospy.Subscriber('ultrasonic',ultrasonic, self.updatePlots)
+		# rospy.Subscriber('ultrasonic',Ultrasonic, self.updatePlots)
 		# # spin() simply keeps python from exiting until this node is stopped
 		# rospy.spin()
 		while(True):
